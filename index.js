@@ -55,12 +55,13 @@ form.addEventListener("submit", (event) => {
     emailPara.innerHTML = "Email can not be empty";
   } else if (!email.value.match(checkEmail)) {
     document.getElementsByName("email")[0].placeholder = "email@example/com";
-
+    thirdInput.classList.remove("red");
     event.preventDefault();
     iconthree.style.opacity = "100%";
     emailPara.innerHTML = "Looks like this is not a valid email address.";
   } else {
     iconthree.style.opacity = "o%";
+    thirdInput.classList.remove("red");
     emailPara.innerHTML = "";
   }
 

@@ -109,7 +109,7 @@ body {
 }
 
 .red::placeholder {
-  color: var(--Red);
+  color: red;
 }
 
 .input {
@@ -125,7 +125,7 @@ body {
   margin-top: 5%;
   border-color: transparent;
   font-size: 1vw;
-  color: red;
+  color: var(--Dark-Blue);
 }
 
 .input:focus {
